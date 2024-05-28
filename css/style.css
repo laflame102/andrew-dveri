@@ -14,7 +14,7 @@
 
 html {
   height: 100%;
-  overflow: hidden; 
+  /* overflow: hidden;  */
 }
 
 body {
@@ -251,6 +251,7 @@ body {
 .product img {
   width: auto;
   height: 250px;
+  width: 200px;
 }
 .product h3 {
   font-size: 18px;
@@ -777,7 +778,7 @@ header::before {
   transform: translateZ(-1px) scale(2);
 }
 
-header .text-container{
+header .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -788,5 +789,3 @@ header .text-container{
   margin: 0 330px;
   border-radius: 20px;
 }
-
-
