@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Каталог</title>
+  </head>
+
+  <body>
+    <!-- Меню -->
+    <div class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="логотип" />
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про компанію</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="order.html">На замовлення</a></li>
+            <li><a href="portfolio.html">Наші роботи</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+          <div class="phone">
+            <a href="tel:+380953671316">&#9742; +380 95 367 13 16</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular" style="background-image: url(img/background.jpg)">
+      <h2>Список дверей</h2>
+      <ul id="door-list"></ul>
+
+      <!-- Форма для додавання нової двері -->
+      <h2>Додати двері</h2>
+      <form id="add-door-form" class="door-form" enctype="multipart/form-data">
+        <label for="doorName">Назва:</label>
+        <input type="text" id="doorName" class="door-input" required /><br />
+        <label for="doorPrice">Ціна:</label>
+        <input type="number" id="doorPrice" class="door-input" required /><br />
+        <button id="add-door-button" class="door-button">Додати двері</button>
+      </form>
+
+      <!-- Форма для оновлення інформації про двері -->
+      <h2>Редагувати двері</h2>
+      <form id="edit-door-form" class="door-form" style="display: none">
+        <input type="hidden" id="edit-door-id" />
+        <label for="editDoorName">Назва:</label>
+        <input
+          type="text"
+          id="editDoorName"
+          class="door-input"
+          required
+        /><br />
+        <label for="editDoorPrice">Ціна:</label>
+        <input
+          type="number"
+          id="editDoorPrice"
+          class="door-input"
+          required
+        /><br />
+        <button id="update-door-button" class="door-button">Оновити</button>
+        <button id="cancel-update-button" class="door-button">Відмінити</button>
+      </form>
+    </div>
+    <!-- Футер -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <a href="#">Private Policy</a>
+            <span class="accent-color">&copy; Voznesensk 2005</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
